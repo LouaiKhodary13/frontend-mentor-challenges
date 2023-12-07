@@ -1,0 +1,334 @@
+/* Resetting default styles */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Setting default font size for the document */
+html {
+  font-size: 18px;
+}
+
+/* Defining custom CSS variables for colors and gradients */
+:root {
+  /*  Colors */
+
+  /* *** Primary *** */
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+
+  /*  Gradients */
+  /* (background) */
+  --Light-slate-blue: hsl(252, 100%, 67%);
+  --Light-royal-blue: hsl(241, 81%, 54%);
+
+  /* (circle) */
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+
+  /* item-1 background color */
+  --item-1-background: hsl(249, 83%, 61%);
+}
+
+/* Container styles */
+.container {
+  width: 56.25rem;
+  margin: 100px auto;
+}
+
+/* Flex container styles */
+.flex-container {
+  height: 600px;
+  width: 100%;
+  display: flex;
+  align-items: stretch; /* Add this line */
+  justify-content: space-between;
+}
+
+/* Styles for item-1 */
+.item-1 {
+  width: 50%;
+  background: var(--item-1-background);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for title */
+.title {
+  width: 100%;
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Styles for title h2 */
+.title h2 {
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: #d3c9fe;
+  font-weight: 800;
+  font-size: 2.2rem;
+}
+
+/* Styles for circle */
+.circle {
+  width: 250px;
+  height: 250px;
+  background-color: var(--Violet-blue);
+  margin: 0 auto;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Styles for number */
+.number {
+  font-size: 4.5rem;
+  color: white;
+  font-weight: 800;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Styles for text */
+.text {
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: 500;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
+/* Styles for circle-text */
+.circle-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Styles for resulte */
+.resulte {
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* Styles for resulte h2 */
+.resulte h2 {
+  padding-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: 800;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
+}
+
+/* Styles for resulte p */
+.resulte p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
+}
+
+/* Styles for item-2 */
+.item-2 {
+  width: 50%;
+  height: 100%;
+  background: blanchedalmond;
+  padding: 1rem;
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  background: white;
+}
+
+/* Styles for item-2-title */
+.item-2-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Styles for item-2-title h2 */
+.item-2-title h2 {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: #2f374b;
+  margin-bottom: 10px;
+}
+
+/* Styles for data-container */
+.data-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Styles for data */
+.data {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+}
+
+/* Styles for text-icon-container */
+.text-icon-container {
+  padding: 20px;
+  flex-direction: row;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Styles for icon */
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Styles for btn-container */
+.btn-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 10px;
+}
+
+/* Styles for btn */
+.btn {
+  width: 100%;
+  padding: 1rem 2rem;
+  border-radius: 30px;
+  border: none;
+  background: hsl(224, 30%, 27%);
+  color: white;
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background: #543bf7;
+}
+/* Media queries for responsive design */
+@media (max-width: 1200px) {
+  /* Styles for container */
+  .container {
+    width: 80%;
+  }
+  /* Styles for title h2, resulte h2, item-2-title h2 */
+  .title h2,
+  .resulte h2,
+  .item-2-title h2 {
+    font-size: 2rem;
+  }
+  /* Styles for number */
+  .number {
+    font-size: 4rem;
+  }
+  /* Styles for text, resulte p */
+  .text,
+  .resulte p {
+    font-size: 1.4rem;
+  }
+}
+
+/* More media queries for responsive design */
+@media (max-width: 900px) {
+  /* Styles for container */
+  .container {
+    width: 90%;
+  }
+  /* Styles for title h2, resulte h2, item-2-title h2 */
+  .title h2,
+  .resulte h2,
+  .item-2-title h2 {
+    font-size: 1.8rem;
+  }
+  /* Styles for number */
+  .number {
+    font-size: 3.5rem;
+  }
+  /* Styles for text, resulte p */
+  .text,
+  .resulte p {
+    font-size: 1.3rem;
+  }
+}
+
+/* More media queries for responsive design */
+@media (max-width: 600px) {
+  /* Styles for flex-container */
+  .flex-container {
+    flex-direction: column;
+  }
+  /* Styles for item-1, item-2 */
+  .item-1,
+  .item-2 {
+    width: 100%;
+  }
+  /* Styles for container */
+  .container {
+    width: 95%;
+  }
+  /* Styles for title h2, resulte h2, item-2-title h2 */
+  .title h2,
+  .resulte h2,
+  .item-2-title h2 {
+    font-size: 1.6rem;
+  }
+  /* Styles for number */
+  .number {
+    font-size: 3rem;
+  }
+  /* Styles for text, resulte p */
+  .text,
+  .resulte p {
+    font-size: 1.2rem;
+  }
+}
+
+/* More media queries for responsive design */
+@media (max-width: 400px) {
+  /* Styles for container */
+  .container {
+    width: 100%;
+  }
+  /* Styles for title h2, resulte h2, item-2-title h2 */
+  .title h2,
+  .resulte h2,
+  .item-2-title h2 {
+    font-size: 1.4rem;
+  }
+  /* Styles for number */
+  .number {
+    font-size: 2.5rem;
+  }
+  /* Styles for text, resulte p */
+  .text,
+  .resulte p {
+    font-size: 1rem;
+  }
+}

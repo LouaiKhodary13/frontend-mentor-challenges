@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <!-- Page title -->
+    <title>Frontend Mentor | Results summary component</title>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="main.css" />
+
+    <!-- Inline CSS -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main container for the whole app -->
+    <main class="container">
+      <!-- Flex container for layout -->
+      <div class="flex-container">
+        <!-- Item 1: Result section -->
+        <div class="item-1">
+          <div class="title">
+            <h2>Your Result</h2>
+          </div>
+          <!-- Circle for visual representation of result -->
+          <div class="circle">
+            <div class="circle-text">
+              <span class="number">76</span>
+              <span class="text">of 100</span>
+            </div>
+          </div>
+          <!-- Textual representation of result -->
+          <div class="resulte">
+            <h2>Great</h2>
+            <p>
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </div>
+        <!-- Item 2: Summary section -->
+        <div class="item-2">
+          <header class="item-2-title">
+            <h2>Summery</h2>
+          </header>
+          <!-- Container for data -->
+          <div class="data-container"></div>
+          <!-- Container for button -->
+          <div class="btn-container"><button class="btn">Continue</button></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript file -->
+    <script src="app.js"></script>
+  </body>
+</html>
