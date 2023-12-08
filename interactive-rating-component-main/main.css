@@ -1,0 +1,272 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+:root {
+  /* Colors */
+
+  /* Primary  */
+
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral  */
+
+  --White: hsl(0, 0%, 100%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+html {
+  font-size: 15px;
+}
+body {
+  background-color: var(--Very-Dark-Blue);
+  color: var(--White);
+  font-family: 'Overpass', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  animation: fadeIn 3s;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 32.25rem;
+  background-color: var(--Dark-Blue);
+  margin: 6.25rem auto;
+  border-radius: 2.25rem;
+  padding: 2rem;
+}
+.star {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  background: #282e37;
+  border-radius: 50%;
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+}
+.title {
+  margin-top: 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+.title h2 {
+  font-size: 2.5rem;
+}
+.title p {
+  padding-top: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: var(--Light-Grey);
+}
+.btn-container {
+  margin-top: 1.25rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  border: none;
+  color: hsl(216, 12%, 54%);
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+.btn:hover {
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.btn-out {
+  background: hsl(217, 12%, 63%);
+  color: white;
+}
+.btn-submit {
+  margin-top: 3.125rem;
+  width: 100%;
+  height: 3.125rem;
+  background-color: var(--Orange);
+  border-radius: 1.25rem;
+  border: none;
+  color: var(--White);
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 1.25rem;
+}
+.btn-submit:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+}
+.thanks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 32.25rem;
+  background-color: var(--Dark-Blue);
+  margin: 6.25rem auto;
+  border-radius: 2.25rem;
+  padding: 2rem;
+  display: none;
+  animation: fadeIn 3s;
+}
+.thanks-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.thanks-img img {
+  display: block;
+}
+.thanks-title {
+  margin-top: 1.875rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  background: #282f36;
+  border-radius: 1.25rem;
+}
+.thanks-title h2 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  color: var(--Orange);
+  padding: 0.625rem;
+}
+.thanks-info {
+  margin-top: 1.875rem;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+.thanks-info p {
+  margin: 0 auto;
+  padding-top: 1rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+  font-size: 1rem;
+  color: var(--Light-Grey);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container {
+    width: 90%;
+    margin: 3rem auto; 
+  }
+
+  .title h2 {
+    font-size: 2rem; 
+  }
+
+  .title p,
+  .thanks-info p {
+    font-size: 0.9rem; 
+  }
+
+  .btn {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.2rem; 
+  }
+
+  .btn-submit {
+    height: 2.5rem; 
+    font-size: 1rem; /
+  }
+}
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 13px; /
+  }
+
+  .title h2 {
+    font-size: 1.8rem;
+  }
+
+  .title p,
+  .thanks-info p {
+    font-size: 0.8rem; 
+  }
+
+  .btn {
+    width: 2rem; 
+    height: 2rem;
+    font-size: 1rem; 
+  }
+
+  .btn-submit {
+    height: 2rem; 
+    font-size: 0.9rem;
+  }
+  .thanks {
+    width: 26.25rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  html {
+    font-size: 12px; 
+  }
+
+  .title h2 {
+    font-size: 1.6rem; 
+  }
+
+  .title p,
+  .thanks-info p {
+    font-size: 0.7rem;
+  }
+
+  .btn {
+    width: 1.8rem;
+    height: 1.8rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-submit {
+    height: 1.8rem;
+    font-size: 0.8rem;
+  }
+  .thanks {
+    width: 22.25rem;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
