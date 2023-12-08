@@ -26,7 +26,8 @@ The project includes HTML, CSS, and JavaScript files to create a simple and resp
 
 ## Preview
 
-Include a screenshot, gif, or link to a live demo (if available) showcasing the interactive rating component in action.
+You can view the live demo of the interactive rating component [here](https://interactive-rating-component-mentor.netlify.app/).
+
 
 ## Credits
 
