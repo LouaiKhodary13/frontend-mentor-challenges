@@ -177,54 +177,56 @@ nav {
   gap: 60px;
 }
 @media screen and (max-width: 800px) {
+  nav {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
   .menu-icon {
     display: block;
   }
-  .links-container {
+  .links {
     display: none;
   }
 }
-@media screen and (max-width: 770px) {
+
+@media screen and (max-width: 439px) {
   nav {
-    width: 800px;
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 }
-@media screen and (max-width: 760px) {
+
+@media screen and (max-width: 415px) {
   nav {
-    width: 100%;
-  }
-  @media screen and (max-width: 439px) {
-    nav {
-      width: 320px;
-    }
-  }
-  @media screen and (max-width: 415px) {
-    nav {
-      width: 390px;
-    }
+    width: 90%;
+    max-width: 390px;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 400px) {
   nav {
-    width: 450px;
-  }
-  .cart-overlay {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
-    height: 300px;
-    position: absolute;
-    background-color: white;
-    top: 65px;
-    right: 68px;
-    bottom: 50px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 350px;
+    margin: 0 auto;
   }
 }
+
 @media screen and (max-width: 360px) {
   nav {
-    width: 300px;
+    width: 90%;
+    max-width: 300px;
+    margin: 0 auto;
   }
 }
+@media screen and (max-width: 320px) {
+  nav {
+    width: 90%;
+    max-width: none;
+    margin: 0 auto;
+  }
+}
+
+
