@@ -109,7 +109,6 @@
 .next-res {
   display: none;
 }
-
 /* responsive mode */
 @media screen and (max-width: 770px) {
   .images-container {
@@ -136,14 +135,17 @@
   .images-container {
     margin-left: 0;
   }
+
   .product-img {
     margin-left: 0;
     width: 100%;
-    position: relative; /* Add this to position the buttons absolutely within this container */
+    position: relative;
   }
+
   .images {
     display: none;
   }
+
   .img {
     width: 100%;
     border-radius: 0;
@@ -151,9 +153,10 @@
     position: relative;
     z-index: -999;
   }
+
   .next-btn,
   .prev-btn {
-    display: block; /* Make the buttons visible */
+    display: block;
     position: absolute;
     top: 50%;
     width: 40px;
@@ -161,47 +164,58 @@
     background-color: #ffffff;
     border-radius: 50%;
   }
+
   .next-btn {
-    right: 10px;
+    right: 42px;
     transform: translateY(-50%);
   }
+
   .prev-btn {
     left: 10px;
     transform: translateY(-50%);
   }
 }
+
 @media screen and (max-width: 435px) {
   .img {
     width: 465px;
   }
+
   .next-btn {
     right: -17px;
   }
 }
+
 @media screen and (max-width: 431px) {
   .img {
     width: 350px;
   }
+
   .next-btn {
     right: 97px;
   }
 }
+
 @media screen and (max-width: 420px) {
   .img {
     width: 630px;
   }
+
   .next-btn {
     right: -50%;
   }
 }
+
 @media screen and (max-width: 415px) {
   .img {
     width: 418px;
   }
+
   .next-btn {
     right: 2%;
   }
 }
+
 @media screen and (max-width: 412px) {
   .img {
     width: 433px;
@@ -214,7 +228,14 @@
     position: relative;
     z-index: -99;
   }
+
   .next-btn {
     right: -30%;
   }
 }
+@media screen and (max-width: 320px) {
+  .next-btn {
+    right: -53%;
+  }
+}
+
