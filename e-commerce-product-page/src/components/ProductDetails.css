@@ -1,0 +1,151 @@
+article {
+  width: 100%;
+  padding: 50px;
+  margin-left: 100px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+header .title h2 {
+  color: hsl(26, 100%, 55%);
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+header .title h4 {
+  color: black;
+  font-size: 42px;
+  width: 400px;
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.item-info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.item-details {
+  padding-top: 10px;
+  line-height: 30px;
+  width: 450px;
+  color: #8d8e93;
+}
+
+.price-container {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.price {
+  color: black;
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.discount {
+  background-color: #fff1e3;
+  padding: 4px 8px;
+  text-align: center;
+  color: #e78944;
+  font-weight: 700;
+  border-radius: 5px;
+}
+
+.before-discount span {
+  position: relative;
+  color: #b9bcc1;
+  font-weight: 400;
+  margin-top: 20px;
+}
+
+.before-discount span::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  height: 2px;
+  width: 100%;
+  background-color: currentColor;
+  font-weight: 700;
+}
+
+.btn-container {
+  margin-top: 20px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-range {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f7f8fd;
+  border-radius: 10px;
+}
+
+.btn-add-cart {
+  background-color: hsl(26, 100%, 55%);
+  color: white;
+  width: 450px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 10px;
+  gap: 10px;
+}
+
+.btn-add-cart:hover {
+  background-color: #ffac6a;
+  transition: background-color 0.3s ease;
+}
+
+@media screen and (max-width: 760px) {
+  article {
+    margin-left: 0;
+    padding: 20px; 
+  }
+
+  .btn-container {
+    margin-bottom: 0;
+    flex-direction: column;
+
+    gap: 10px;
+  }
+
+  .btn-range,
+  .btn-add-cart {
+    width: 80%;/
+  }
+
+  .item-details {
+    font-size: 27px;
+    padding-top: 10px;
+    line-height: 30px;
+    width: 100%; 
+  }
+}
+
+

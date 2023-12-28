@@ -1,0 +1,47 @@
+.sidebar {
+  width: 200px;
+  height: 200vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  z-index: 100;
+}
+.close-btn-container {
+  position: relative;
+}
+
+.close-btn-sidebar {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+}
+
+.links-sidebar {
+  margin-top: 100px;
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.links li {
+  margin-bottom: 10px;
+}
+
+.links li a {
+  text-decoration: none;
+  color: black;
+}
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: black;
+}
