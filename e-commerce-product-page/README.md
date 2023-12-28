@@ -31,7 +31,7 @@ The Sneakers Company E-commerce Platform is built using React, providing a user-
 
 ## Usage :
 
-npm start
+npm run dev
 
 ## Technologies Used:
 
